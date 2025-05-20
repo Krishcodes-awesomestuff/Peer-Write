@@ -5,10 +5,9 @@ import { useNavigate } from 'react-router-dom';
 
 interface LoginProps {
   onLogin: (email: string, password: string) => void;
-  // Remove onSignup prop as we're using router navigation
 }
 
-const Login: React.FC<LoginProps> = ({ onLogin }) => {  // Remove onSignup from props
+const Login: React.FC<LoginProps> = ({ onLogin }) => {  
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
