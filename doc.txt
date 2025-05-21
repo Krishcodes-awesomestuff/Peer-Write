@@ -1,0 +1,26 @@
+Okay, let's talk about the UX flow of the website.
+
+First things first the role selection page. there are two options - Writer and Seeker 
+Both needs a sign-in/sign-up. (college mail only)
+
+For seeker once the onboarding process (i.e signin and verification) is done take them to browse section where they can find a list of writers with their pricing, department, year and things. The Chat option is given in the div card of the same.
+
+when the click the chat option it will take them to Chat with them option. (need to restrict few words)
+
+then comes the pain :/
+
+UX for Writer
+
+after successful completion  in onboarding it will take them to the dashboard.
+
+How do I design the Dashboard????
+
+take ref from astrotalk 
+
+Active Chat and Previous chats - Once both seeker and writer closes the chat the deal gets closed
+
+UPI intergration to wallet
+
+Terms Privacy and Guidelines
+
+Backout all racist and abusive words along with flirtatious words 

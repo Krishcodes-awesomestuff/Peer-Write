@@ -130,18 +130,6 @@ const WriterSignup: React.FC<WriterSignupProps> = ({ onSignup }) => {
               fullWidth
             />
             
-            <Input
-              type="number"
-              label="Price per Page (₹)"
-              min="1"
-              max="12"
-              step="0.5"
-              value={formData.pricePerPage}
-              onChange={(e) => setFormData({ ...formData, pricePerPage: e.target.value })}
-              required
-              fullWidth
-            />
-            
             <div>
               <Button type="submit" variant="primary" fullWidth>
                 Create Profile

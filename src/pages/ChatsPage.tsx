@@ -30,6 +30,13 @@ const ChatsPage: React.FC<ChatsPageProps> = ({
     navigate('/browse');
   };
   
+  // And update any other navigation calls to use the same path
+  // Remove the duplicate declarations below
+  // const navigate = useNavigate();
+  // const handleBackToBrowse = () => {
+  //   navigate('/browse');
+  // };
+  
   useEffect(() => {
     // Set the first chat as active if there are chats and none is selected
     if (chats.length > 0 && !activeChat) {
@@ -132,7 +139,7 @@ const ChatsPage: React.FC<ChatsPageProps> = ({
                   messages={getChatMessages()}
                   onSendMessage={handleSendMessage}
                   onReport={onReport}
-                  onBack={handleBackToBrowse}  // Changed to use the new navigation function
+                  onBack={handleBackToBrowse}
                 />
               )}
             </div>

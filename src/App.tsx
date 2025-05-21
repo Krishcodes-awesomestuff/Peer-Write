@@ -198,8 +198,24 @@ function App() {
         
         <main className="flex-1 bg-gradient-to-b from-gray-50 to-white">
           <Routes>
-            <Route path="/browse" element={<BrowseWritersPage writers={mockWriters} onChatClick={handleChatClick} />} />
+            <Route path="/browse" element={
+              <BrowseWritersPage 
+                writers={mockWriters}
+                onChatClick={handleChatClick}
+              />
+            } />
+            <Route path="/chats" element={
+              <ChatsPage 
+                chats={chats}
+                messages={messages}
+                currentUser={userData}
+                allUsers={users}
+                onSendMessage={handleSendMessage}
+                onReport={handleReport}
+              />
+            } />
             <Route path="/login" element={<Login onLogin={handleLogin} />} />
+            <Route path="/writer-signup" element={<WriterSignup onSignup={handleWriterSignup} />} />
             <Route path="/" element={renderContent()} />
           </Routes>
         </main>

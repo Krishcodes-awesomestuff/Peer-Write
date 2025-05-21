@@ -136,10 +136,19 @@ const WriterDashboard: React.FC<WriterDashboardProps> = ({ currentUser, onUpdate
         
         <div className="sm:w-2/3">
           <div className="mb-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">Active Orders</h3>
+            <h3 className="text-lg font-medium text-gray-900 mb-3">Active Chats</h3>
             <div className="bg-white rounded-lg border border-gray-200">
               <div className="p-4 text-center text-gray-500">
-                You don't have any active orders at the moment.
+                You don't have any active chats at the moment.
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">Previous Chats</h3>
+            <div className="bg-white rounded-lg border border-gray-200">
+              <div className="p-4 text-center text-gray-500">
+                You don't have any previous chats at the moment.
               </div>
             </div>
           </div>

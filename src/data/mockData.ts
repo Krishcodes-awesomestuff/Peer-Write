@@ -3,7 +3,7 @@ import { User, Writer, Message, Chat } from '../types';
 export const mockUsers: User[] = [
   {
     id: '1',
-    name: 'Alex Johnson',
+    name: '',
     email: 'alex.johnson@college.edu',
     department: 'Computer Science',
     year: 3,
@@ -24,9 +24,9 @@ export const mockUsers: User[] = [
 export const mockWriters: Writer[] = [
   {
     id: '3',
-    name: 'Jordan Smith',
-    email: 'jordan.smith@college.edu',
-    department: 'English Literature',
+    name: 'Kanatthal',
+    email: 'kanatthal@college.edu',
+    department: 'EEE',
     year: 4,
     profileImage: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
     isWriter: true,
@@ -37,9 +37,9 @@ export const mockWriters: Writer[] = [
   },
   {
     id: '4',
-    name: 'Morgan Lee',
-    email: 'morgan.lee@college.edu',
-    department: 'History',
+    name: 'Sorna Shanthi',
+    email: 'sornasuiii@college.edu',
+    department: 'AIML',
     year: 3,
     profileImage: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150',
     isWriter: true,
@@ -50,9 +50,9 @@ export const mockWriters: Writer[] = [
   },
   {
     id: '5',
-    name: 'Casey Rivera',
-    email: 'casey.rivera@college.edu',
-    department: 'Psychology',
+    name: 'Thevar Magan',
+    email: 'potriparadiponneh@college.edu',
+    department: 'Mathematics',
     year: 4,
     profileImage: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150',
     isWriter: true,
@@ -63,8 +63,8 @@ export const mockWriters: Writer[] = [
   },
   {
     id: '6',
-    name: 'Jamie Wilson',
-    email: 'jamie.wilson@college.edu',
+    name: 'Rama Reddy',
+    email: 'nenureddyra@college.edu',
     department: 'Philosophy',
     year: 3,
     profileImage: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150',
@@ -76,9 +76,9 @@ export const mockWriters: Writer[] = [
   },
   {
     id: '7',
-    name: 'Riley Thompson',
-    email: 'riley.thompson@college.edu',
-    department: 'Sociology',
+    name: 'Ganapathi Iyer',
+    email: 'ganapathi.homam@college.edu',
+    department: 'Astrology',
     year: 2,
     profileImage: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150',
     isWriter: true,

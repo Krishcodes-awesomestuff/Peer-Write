@@ -109,15 +109,17 @@ const UserProfile: React.FC<UserProfileProps> = ({ user, onUpdateProfile, onTogg
               <p className="text-sm text-gray-600 mb-2">
                 {user.isWriter ? 'Currently registered as a writer' : 'Looking for writing help'}
               </p>
-              <Button
-                variant={user.isWriter ? 'secondary' : 'primary'}
-                size="sm"
-                onClick={onToggleWriterMode}
-                className="flex items-center"
-              >
-                <BookOpen size={16} className="mr-1" />
-                {user.isWriter ? 'Switch to Client Mode' : 'Become a Writer'}
-              </Button>
+              <div className="flex justify-center">
+                <Button
+                  variant={user.isWriter ? 'secondary' : 'primary'}
+                  size="sm"
+                  onClick={onToggleWriterMode}
+                  className="flex items-center"
+                >
+                  <BookOpen size={16} className="mr-1" />
+                  {user.isWriter ? 'Switch to Client Mode' : 'Become a Writer'}
+                </Button>
+              </div>
             </div>
           </div>
         </div>

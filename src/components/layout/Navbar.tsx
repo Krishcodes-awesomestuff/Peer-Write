@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { LayoutDashboard, User, Menu, X } from 'lucide-react';
 import { User as UserType } from '../../types';
 import Avatar from '../ui/Avatar';
+import { useLocation } from 'react-router-dom';
 
 interface NavbarProps {
   currentUser: UserType;
@@ -11,7 +12,9 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ currentUser, activePage, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+  const location = useLocation();
+  const isBrowsePage = location.pathname === '/browse';
+
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard size={20} /> },
     { id: 'profile', label: 'My Profile', icon: <User size={20} /> },
